@@ -71,18 +71,17 @@ const NavBar = () => {
                 </NavLink>
               </NavItem>
 
-              {/* {isAuthenticated && (
+              {isAuthenticated && (
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/external-api"
-                    exact
+                    to="/products"
                     activeClassName="router-link-exact-active"
                   >
-                    External API
+                    Products
                   </NavLink>
                 </NavItem>
-              )} */}
+              )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
